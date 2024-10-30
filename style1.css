@@ -1,0 +1,287 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #007bff; /* Blue background */
+    padding: 1rem 2rem;  
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Increased shadow for depth */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.navbar:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.main-content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.search-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center the input */
+    margin: 20px; /* Space below the search bar */
+    
+}
+
+.search-input {
+    width: 100%;
+    max-width: 400px; /* Max width for the search bar */
+    padding: 12px;
+    margin-left: 25rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+    margin-bottom: 20px;
+   
+}
+
+.search-input:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .search-input {
+        max-width: 90%; /* Full width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .search-input {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 10px; /* Added gap between filters */
+}
+
+.filter-select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 150px;
+}
+
+.country-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.country-card {
+    background-color: #e8e8e8;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.country-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+.like-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.show-more-button {
+    background-color: #8197c0;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto; /* Center button */
+    display: block;
+    width: 200px; /* Fixed width for button */
+}
+
+.show-more-button:hover {
+    background-color: #5f6960;
+}
+
+.wishlist-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wish-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.wish-img {
+    width: 40px; /* Increased image size */
+    height: auto;
+    margin-right: 10px;
+}
+
+.remove {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+.country-details {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.back {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back:hover {
+    background-color: #0056b3;
+}
+
+.suggestions-container {
+    position: absolute;
+    background-color: white;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    width: 100%;
+    z-index: 10;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column; /* Stack filters vertically */
+        align-items: center; /* Center filters */
+    }
+
+    .filter-select {
+        width: 100%; /* Full width for select boxes */
+        margin-bottom: 10px; /* Add space between stacked filters */
+    }
+
+    .country-list {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Smaller cards on smaller screens */
+    }
+
+    .search-input {
+        max-width: 100%; /* Full width input */
+    }
+
+    .show-more-button {
+        width: 90%; /* Full width button */
+        margin: 20px auto; /* Center button */
+    }
+
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .main-content {
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+
+       
+
+}
+
+@media (max-width: 480px) {
+    .country-card {
+        padding: 15px; /* Adjust padding for smaller cards */
+        font-size: 14px; /* Smaller font size for readability */
+    }
+
+    .main-img {
+        border-radius: 3px; /* Smaller border radius for smaller images */
+    }
+
+    .search-input {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .show-more-button {
+        padding: 12px 15px; /* Adjust button padding for smaller screens */
+        font-size: 16px; /* Smaller font size */
+    }
+
+    .wishlist-section {
+        padding: 15px; /* Reduce padding */
+    }
+
+    .back {
+        padding: 8px; /* Adjust padding for back button */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .filters {
+        margin-bottom: 10px; /* Adjust margin */
+    }
+}
