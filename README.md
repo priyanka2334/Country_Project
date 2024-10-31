@@ -1,6 +1,6 @@
-![book](https://github.com/user-attachments/assets/ac46759e-f833-4311-bf2c-9c0250c580e1)
+![Screenshot from 2024-10-31 11-25-30](https://github.com/user-attachments/assets/0e318805-1735-49c3-8195-195d55a97006)
+![Screenshot from 2024-10-31 11-26-27](https://github.com/user-attachments/assets/4459f393-946d-4c26-add7-0b285c773258)
+![Screenshot from 2024-10-31 11-27-10](https://github.com/user-attachments/assets/0a01f79c-556d-4b97-ba8d-c4648054e1ac)
 
 
-![caculator](https://github.com/user-attachments/assets/49438858-4c11-41a6-b62f-b89efa3d4474)
 
-![Menu](https://github.com/user-attachments/assets/14a8dc9d-8c37-46a6-98e9-f55bad83e4f4)
